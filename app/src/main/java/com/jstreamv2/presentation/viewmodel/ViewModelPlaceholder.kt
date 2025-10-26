@@ -1,3 +1,8 @@
+
 package com.jstreamv2.presentation.viewmodel
 
-// TODO: Implement ViewModels
+import androidx.lifecycle.ViewModel
+
+class PlaceholderViewModel : ViewModel() {
+	// Add shared logic here if needed
+}

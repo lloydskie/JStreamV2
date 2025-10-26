@@ -14,6 +14,7 @@ E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\presentation\ui\PlayerScreen
 E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\data\model\PersonListResponse.kt
 E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\data\repository\MovieRepositoryImpl.kt
 E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\domain\usecase\SearchTVShowsUseCase.kt
+E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\di\NetworkModule.kt
 E:\htdocs\JStreamV2\app\src\main\java\presentation\viewmodel\SearchViewModel.kt
 E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\presentation\ui\DetailScreen.kt
 E:\htdocs\JStreamV2\app\src\main\java\data\repository\VideoProgressRepository.kt
@@ -108,6 +109,7 @@ E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\domain\repository\PersonRepo
 E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\data\local\SearchHistory.kt
 E:\htdocs\JStreamV2\app\src\main\kotlin\com\jstreamv2\ui\theme\Type.kt
 E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\data\model\PersonTvCreditsResponse.kt
+E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\di\RepositoryModule.kt
 E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\data\local\AppDao.kt
 E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\data\repository\PersonRepositoryImpl.kt
 E:\htdocs\JStreamV2\app\src\main\java\com\jstreamv2\presentation\navigation\NavGraph.kt

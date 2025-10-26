@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jstreamv2.app-mergeReleaseResources-58:/values-fr/values-fr.xml",
+            "outputFile": "com.jstreamv2.app-mergeReleaseResources-60:/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\qmodz\\.gradle\\caches\\transforms-3\\43bad93a5eb1ee00c8673950df359a2e\\transformed\\jetified-ui-release\\res\\values-fr\\values-fr.xml",

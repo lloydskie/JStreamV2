@@ -1,5 +1,12 @@
 package presentation.viewmodel;
 
+import androidx.lifecycle.ViewModel;
+import dagger.hilt.android.lifecycle.HiltViewModel;
+import javax.inject.Inject;
+import kotlinx.coroutines.flow.StateFlow;
+import data.repository.VideoProgressRepository;
+import data.local.VideoProgress;
+
 @kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0004\u0003\u0004\u0005\u0006B\u0007\b\u0004\u00a2\u0006\u0002\u0010\u0002\u0082\u0001\u0004\u0007\b\t\n\u00a8\u0006\u000b"}, d2 = {"Lpresentation/viewmodel/PlayerUiState;", "", "()V", "Error", "Idle", "Paused", "Playing", "Lpresentation/viewmodel/PlayerUiState$Error;", "Lpresentation/viewmodel/PlayerUiState$Idle;", "Lpresentation/viewmodel/PlayerUiState$Paused;", "Lpresentation/viewmodel/PlayerUiState$Playing;", "app_debug"})
 public abstract class PlayerUiState {
     

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jstreamv2.app-mergeDebugResources-61:/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "com.jstreamv2.app-mergeDebugResources-63:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
                     "source": "C:\\Users\\qmodz\\.gradle\\caches\\transforms-3\\acbfd716e0708ef3b97373bb1b5b4c9e\\transformed\\core-1.12.0\\res\\values-pt-rBR\\values-pt-rBR.xml",

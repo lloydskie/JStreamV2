@@ -153,7 +153,7 @@ fun EmptyState(tab: String) {
     ) {
         Text("No $tab yet!", style = MaterialTheme.typography.headlineSmall)
         Spacer(Modifier.height(16.dp))
-        Button(onClick = { /* TODO: Add call-to-action */ }) {
+    Button(onClick = { /* Implement browse and add action */ }) {
             Text("Browse and add $tab")
         }
     }

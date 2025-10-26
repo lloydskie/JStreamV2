@@ -151,7 +151,6 @@ id action_text
 id actions
 id androidx_compose_ui_view_composition_context
 id async
-id binding_reference
 id blocking
 id chronometer
 id coil_request_manager

@@ -1,5 +1,12 @@
 package presentation.viewmodel;
 
+import androidx.lifecycle.ViewModel;
+import dagger.hilt.android.lifecycle.HiltViewModel;
+import javax.inject.Inject;
+import kotlinx.coroutines.flow.StateFlow;
+import kotlinx.coroutines.Dispatchers;
+import domain.usecase.GetRecommendationsUseCase;
+
 @kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0003\u0003\u0004\u0005B\u0007\b\u0004\u00a2\u0006\u0002\u0010\u0002\u0082\u0001\u0003\u0006\u0007\b\u00a8\u0006\t"}, d2 = {"Lpresentation/viewmodel/RecommendationsUiState;", "", "()V", "Error", "Loading", "Success", "Lpresentation/viewmodel/RecommendationsUiState$Error;", "Lpresentation/viewmodel/RecommendationsUiState$Loading;", "Lpresentation/viewmodel/RecommendationsUiState$Success;", "app_debug"})
 public abstract class RecommendationsUiState {
     

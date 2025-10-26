@@ -1,3 +1,6 @@
+
 package com.jstreamv2.domain.usecase
 
-// TODO: Implement business logic use cases
+class PlaceholderUseCase {
+	// Add business logic here if needed
+}

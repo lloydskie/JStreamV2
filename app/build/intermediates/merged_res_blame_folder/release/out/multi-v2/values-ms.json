@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jstreamv2.app-mergeReleaseResources-58:/values-ms/values-ms.xml",
+            "outputFile": "com.jstreamv2.app-mergeReleaseResources-60:/values-ms/values-ms.xml",
             "map": [
                 {
                     "source": "C:\\Users\\qmodz\\.gradle\\caches\\transforms-3\\ccb632dd2524c30f06b57e2ab167c7cb\\transformed\\jetified-material3-release\\res\\values-ms\\values-ms.xml",

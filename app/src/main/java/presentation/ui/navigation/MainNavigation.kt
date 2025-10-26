@@ -72,32 +72,21 @@ fun MainNavigation() {
     }
 }
 
+
 @Composable
 fun BottomNavBar(navController: NavHostController) {
+    val destinations = listOf("home", "search", "mylist", "profile")
+    val labels = listOf("Home", "Search", "My List", "Profile")
+    val icons = listOf(Icons.Filled.Home, Icons.Filled.Search, Icons.Filled.List, Icons.Filled.Person)
+    val currentRoute = navController.currentBackStackEntry?.destination?.route
     NavigationBar {
-        NavigationBarItem(
-            selected = false, // TODO: track selected
-            onClick = { navController.navigate("home") },
-            icon = { Icon(Icons.Filled.Home, contentDescription = "Home") },
-            label = { Text("Home") }
-        )
-        NavigationBarItem(
-            selected = false,
-            onClick = { navController.navigate("search") },
-            icon = { Icon(Icons.Filled.Search, contentDescription = "Search") },
-            label = { Text("Search") }
-        )
-        NavigationBarItem(
-            selected = false,
-            onClick = { navController.navigate("mylist") },
-            icon = { Icon(Icons.Filled.List, contentDescription = "My List") },
-            label = { Text("My List") }
-        )
-        NavigationBarItem(
-            selected = false,
-            onClick = { navController.navigate("profile") },
-            icon = { Icon(Icons.Filled.Person, contentDescription = "Profile") },
-            label = { Text("Profile") }
-        )
+        destinations.forEachIndexed { index, route ->
+            NavigationBarItem(
+                selected = currentRoute == route,
+                onClick = { navController.navigate(route) },
+                icon = { Icon(icons[index], contentDescription = labels[index]) },
+                label = { Text(labels[index]) }
+            )
+        }
     }
 }
