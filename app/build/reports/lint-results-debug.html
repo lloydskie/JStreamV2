@@ -177,9 +177,9 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 20 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 26 warnings</span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Sun Oct 26 13:53:49 CST 2025 by AGP (8.2.0)</nav>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Sun Oct 26 17:01:46 CST 2025 by AGP (8.2.0)</nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -188,7 +188,8 @@ document.getElementById(id).style.display = 'none';
       <a class="mdl-navigation__link" href="#overview"><i class="material-icons">dashboard</i>Overview</a>
       <a class="mdl-navigation__link" href="#ObsoleteLintCustomCheck"><i class="material-icons warning-icon">warning</i>Obsolete custom lint check (1)</a>
       <a class="mdl-navigation__link" href="#OldTargetApi"><i class="material-icons warning-icon">warning</i>Target SDK attribute is not targeting latest version (1)</a>
-      <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (17)</a>
+      <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (22)</a>
+      <a class="mdl-navigation__link" href="#KaptUsageInsteadOfKsp"><i class="material-icons warning-icon">warning</i>Kapt usage should be replaced with KSP (1)</a>
       <a class="mdl-navigation__link" href="#MissingApplicationIcon"><i class="material-icons warning-icon">warning</i>Missing application icon (1)</a>
     </nav>
   </div>
@@ -213,14 +214,19 @@ document.getElementById(id).style.display = 'none';
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#OldTargetApi">OldTargetApi</a>: Target SDK attribute is not targeting latest version</td></tr>
 <tr>
-<td class="countColumn">17</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<td class="countColumn">22</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#GradleDependency">GradleDependency</a>: Obsolete Gradle Dependency</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#KaptUsageInsteadOfKsp">KaptUsageInsteadOfKsp</a>: Kapt usage should be replaced with KSP</td></tr>
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
 </td></tr>
 <tr>
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#MissingApplicationIcon">MissingApplicationIcon</a>: Missing application icon</td></tr>
-<tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (42)</a>
+<tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (55)</a>
 </td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (39)</a>
 </td></tr>
@@ -241,7 +247,7 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="file:///C:/Users/qmodz/.gradle/caches/transforms-3/4a55d50a07889bcc4674deec3f5af6fc/transformed/jetified-runtime-release/jars/lint.jar">C:\Users\qmodz\.gradle\caches\transforms-3\4a55d50a07889bcc4674deec3f5af6fc\transformed\jetified-runtime-release\jars\lint.jar</a></span>: <span class="message">Library lint checks reference invalid APIs; these checks <b>will be skipped</b>!<br/>
+<span class="location"><a href="file:///C:/Users/qmodz/.gradle/caches/transforms-3/1c3a14fd1cf4e1a535fd9fba8349021b/transformed/jetified-runtime-release/jars/lint.jar">C:\Users\qmodz\.gradle\caches\transforms-3\1c3a14fd1cf4e1a535fd9fba8349021b\transformed\jetified-runtime-release\jars\lint.jar</a></span>: <span class="message">Library lint checks reference invalid APIs; these checks <b>will be skipped</b>!<br/>
 <br/>
 Lint found an issue registry (<code>androidx.compose.runtime.lint.RuntimeIssueRegistry</code>)<br/>
 which contains some references to invalid API:<br/>
@@ -310,7 +316,7 @@ Dismiss</button>            </div>
 <span class="location"><a href="../../build.gradle">../../build.gradle</a>:14</span>: <span class="message">Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.</span><br /><pre class="errorlines">
 <span class="lineno"> 11 </span>    defaultConfig {
 <span class="lineno"> 12 </span>        applicationId <span class="string">"com.jstreamv2"</span>
-<span class="lineno"> 13 </span>        minSdk <span class="number">24</span>
+<span class="lineno"> 13 </span>    minSdk <span class="number">26</span>
 <span class="caretline"><span class="lineno"> 14 </span>        <span class="warning">targetSdk <span class="number">34</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno"> 15 </span>        versionCode <span class="number">1</span>
 <span class="lineno"> 16 </span>        versionName <span class="string">"1.0"</span>
@@ -408,7 +414,7 @@ Dismiss</button>            </div>
 <span class="lineno"> 50 </span>    implementation <span class="string">"androidx.lifecycle:lifecycle-livedata-ktx:2.6.2"</span>
 </pre>
 
-<button class="mdl-button mdl-js-button mdl-button--primary" id="GradleDependencyDivLink" onclick="reveal('GradleDependencyDiv');" />+ 12 More Occurrences...</button>
+<button class="mdl-button mdl-js-button mdl-button--primary" id="GradleDependencyDivLink" onclick="reveal('GradleDependencyDiv');" />+ 17 More Occurrences...</button>
 <div id="GradleDependencyDiv" style="display: none">
 <span class="location"><a href="../../build.gradle">../../build.gradle</a>:48</span>: <span class="message">A newer version of androidx.compose.ui:ui-tooling-preview than 1.5.3 is available: 1.9.4</span><br /><pre class="errorlines">
 <span class="lineno"> 45 </span>    implementation <span class="string">"androidx.activity:activity-compose:1.8.0"</span>
@@ -437,7 +443,8 @@ Dismiss</button>            </div>
 <span class="caretline"><span class="lineno"> 50 </span>    implementation <span class="warning"><span class="string">"androidx.lifecycle:lifecycle-livedata-ktx:2.6.2"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno"> 51 </span>    implementation <span class="string">"androidx.navigation:navigation-compose:2.7.4"</span>
 <span class="lineno"> 52 </span>    implementation <span class="string">"androidx.compose.runtime:runtime-livedata:1.5.3"</span>
-<span class="lineno"> 53 </span>        <span class="comment">// Jetpack Compose Material3</span></pre>
+<span class="lineno"> 53 </span>    implementation <span class="string">"androidx.compose.material3:material3:1.2.0"</span>
+</pre>
 
 <span class="location"><a href="../../build.gradle">../../build.gradle</a>:51</span>: <span class="message">A newer version of androidx.navigation:navigation-compose than 2.7.4 is available: 2.9.5</span><br /><pre class="errorlines">
 <span class="lineno"> 48 </span>    implementation <span class="string">"androidx.compose.ui:ui-tooling-preview:1.5.3"</span>
@@ -445,8 +452,8 @@ Dismiss</button>            </div>
 <span class="lineno"> 50 </span>    implementation <span class="string">"androidx.lifecycle:lifecycle-livedata-ktx:2.6.2"</span>
 <span class="caretline"><span class="lineno"> 51 </span>    implementation <span class="warning"><span class="string">"androidx.navigation:navigation-compose:2.7.4"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno"> 52 </span>    implementation <span class="string">"androidx.compose.runtime:runtime-livedata:1.5.3"</span>
-<span class="lineno"> 53 </span>        <span class="comment">// Jetpack Compose Material3</span>
-<span class="lineno"> 54 </span>        implementation <span class="string">"androidx.compose.material3:material3:1.2.0"</span>
+<span class="lineno"> 53 </span>    implementation <span class="string">"androidx.compose.material3:material3:1.2.0"</span>
+<span class="lineno"> 54 </span>
 </pre>
 
 <span class="location"><a href="../../build.gradle">../../build.gradle</a>:52</span>: <span class="message">A newer version of androidx.compose.runtime:runtime-livedata than 1.5.3 is available: 1.9.4</span><br /><pre class="errorlines">
@@ -454,76 +461,123 @@ Dismiss</button>            </div>
 <span class="lineno"> 50 </span>    implementation <span class="string">"androidx.lifecycle:lifecycle-livedata-ktx:2.6.2"</span>
 <span class="lineno"> 51 </span>    implementation <span class="string">"androidx.navigation:navigation-compose:2.7.4"</span>
 <span class="caretline"><span class="lineno"> 52 </span>    implementation <span class="warning"><span class="string">"androidx.compose.runtime:runtime-livedata:1.5.3"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 53 </span>        <span class="comment">// Jetpack Compose Material3</span>
-<span class="lineno"> 54 </span>        implementation <span class="string">"androidx.compose.material3:material3:1.2.0"</span>
-<span class="lineno"> 55 </span>
-</pre>
+<span class="lineno"> 53 </span>    implementation <span class="string">"androidx.compose.material3:material3:1.2.0"</span>
+<span class="lineno"> 54 </span>
+<span class="lineno"> 55 </span>    <span class="comment">// Hilt for Dependency Injection</span></pre>
 
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:54</span>: <span class="message">A newer version of androidx.compose.material3:material3 than 1.2.0 is available: 1.4.0</span><br /><pre class="errorlines">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:53</span>: <span class="message">A newer version of androidx.compose.material3:material3 than 1.2.0 is available: 1.4.0</span><br /><pre class="errorlines">
+<span class="lineno"> 50 </span>    implementation <span class="string">"androidx.lifecycle:lifecycle-livedata-ktx:2.6.2"</span>
 <span class="lineno"> 51 </span>    implementation <span class="string">"androidx.navigation:navigation-compose:2.7.4"</span>
 <span class="lineno"> 52 </span>    implementation <span class="string">"androidx.compose.runtime:runtime-livedata:1.5.3"</span>
-<span class="lineno"> 53 </span>        <span class="comment">// Jetpack Compose Material3</span>
-<span class="caretline"><span class="lineno"> 54 </span>        implementation <span class="warning"><span class="string">"androidx.compose.material3:material3:1.2.0"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 55 </span>
-<span class="lineno"> 56 </span>        <span class="comment">// Retrofit2, OkHttp3, Gson Converter</span>
-<span class="lineno"> 57 </span>        implementation <span class="string">"com.squareup.retrofit2:retrofit:2.9.0"</span>
+<span class="caretline"><span class="lineno"> 53 </span>    implementation <span class="warning"><span class="string">"androidx.compose.material3:material3:1.2.0"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 54 </span>
+<span class="lineno"> 55 </span>    <span class="comment">// Hilt for Dependency Injection</span>
+<span class="lineno"> 56 </span>    implementation <span class="string">"com.google.dagger:hilt-android:2.48"</span>
 </pre>
 
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:59</span>: <span class="message">A newer version of com.squareup.okhttp3:okhttp than 4.10.0 is available: 4.11.0</span><br /><pre class="errorlines">
-<span class="lineno"> 56 </span>        <span class="comment">// Retrofit2, OkHttp3, Gson Converter</span>
-<span class="lineno"> 57 </span>        implementation <span class="string">"com.squareup.retrofit2:retrofit:2.9.0"</span>
-<span class="lineno"> 58 </span>        implementation <span class="string">"com.squareup.retrofit2:converter-gson:2.9.0"</span>
-<span class="caretline"><span class="lineno"> 59 </span>        implementation <span class="warning"><span class="string">"com.squareup.okhttp3:okhttp:4.10.0"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 60 </span>
-<span class="lineno"> 61 </span>        <span class="comment">// Coil for image loading</span>
-<span class="lineno"> 62 </span>        implementation <span class="string">"io.coil-kt:coil-compose:2.4.0"</span>
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:60</span>: <span class="message">A newer version of androidx.room:room-runtime than 2.6.1 is available: 2.8.3</span><br /><pre class="errorlines">
+<span class="lineno"> 57 </span>    kapt <span class="string">"com.google.dagger:hilt-android-compiler:2.48"</span>
+<span class="lineno"> 58 </span>
+<span class="lineno"> 59 </span>    <span class="comment">// Room for local database</span>
+<span class="caretline"><span class="lineno"> 60 </span>    implementation <span class="warning"><span class="string">"androidx.room:room-runtime:2.6.1"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 61 </span>    kapt <span class="string">"androidx.room:room-compiler:2.6.1"</span>
+<span class="lineno"> 62 </span>    implementation <span class="string">"androidx.room:room-ktx:2.6.1"</span>
+<span class="lineno"> 63 </span>
 </pre>
 
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:70</span>: <span class="message">A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.3.0</span><br /><pre class="errorlines">
-<span class="lineno"> 67 </span>    <span class="comment">// Annotation processing (kapt) — not needed for Retrofit by default</span>
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:61</span>: <span class="message">A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.8.3</span><br /><pre class="errorlines">
+<span class="lineno"> 58 </span>
+<span class="lineno"> 59 </span>    <span class="comment">// Room for local database</span>
+<span class="lineno"> 60 </span>    implementation <span class="string">"androidx.room:room-runtime:2.6.1"</span>
+<span class="caretline"><span class="lineno"> 61 </span>    kapt <span class="warning"><span class="string">"androidx.room:room-compiler:2.6.1"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 62 </span>    implementation <span class="string">"androidx.room:room-ktx:2.6.1"</span>
+<span class="lineno"> 63 </span>
+<span class="lineno"> 64 </span>    <span class="comment">// Retrofit2, OkHttp3, Gson Converter</span></pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:62</span>: <span class="message">A newer version of androidx.room:room-ktx than 2.6.1 is available: 2.8.3</span><br /><pre class="errorlines">
+<span class="lineno"> 59 </span>    <span class="comment">// Room for local database</span>
+<span class="lineno"> 60 </span>    implementation <span class="string">"androidx.room:room-runtime:2.6.1"</span>
+<span class="lineno"> 61 </span>    kapt <span class="string">"androidx.room:room-compiler:2.6.1"</span>
+<span class="caretline"><span class="lineno"> 62 </span>    implementation <span class="warning"><span class="string">"androidx.room:room-ktx:2.6.1"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 63 </span>
+<span class="lineno"> 64 </span>    <span class="comment">// Retrofit2, OkHttp3, Gson Converter</span>
+<span class="lineno"> 65 </span>    implementation <span class="string">"com.squareup.retrofit2:retrofit:2.9.0"</span>
+</pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:67</span>: <span class="message">A newer version of com.squareup.okhttp3:okhttp than 4.10.0 is available: 4.11.0</span><br /><pre class="errorlines">
+<span class="lineno"> 64 </span>    <span class="comment">// Retrofit2, OkHttp3, Gson Converter</span>
+<span class="lineno"> 65 </span>    implementation <span class="string">"com.squareup.retrofit2:retrofit:2.9.0"</span>
+<span class="lineno"> 66 </span>    implementation <span class="string">"com.squareup.retrofit2:converter-gson:2.9.0"</span>
+<span class="caretline"><span class="lineno"> 67 </span>    implementation <span class="warning"><span class="string">"com.squareup.okhttp3:okhttp:4.10.0"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno"> 68 </span>
-<span class="lineno"> 69 </span>    testImplementation <span class="string">"junit:junit:4.13.2"</span>
-<span class="caretline"><span class="lineno"> 70 </span>    androidTestImplementation <span class="warning"><span class="string">"androidx.test.ext:junit:1.1.5"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 71 </span>    androidTestImplementation <span class="string">"androidx.test.espresso:espresso-core:3.5.1"</span>
-<span class="lineno"> 72 </span>    androidTestImplementation <span class="string">"androidx.compose.ui:ui-test-junit4:1.5.3"</span>
-<span class="lineno"> 73 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-tooling:1.5.3"</span>
+<span class="lineno"> 69 </span>    <span class="comment">// Coil for image loading</span>
+<span class="lineno"> 70 </span>    implementation <span class="string">"io.coil-kt:coil-compose:2.4.0"</span>
 </pre>
 
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:71</span>: <span class="message">A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.7.0</span><br /><pre class="errorlines">
-<span class="lineno"> 68 </span>
-<span class="lineno"> 69 </span>    testImplementation <span class="string">"junit:junit:4.13.2"</span>
-<span class="lineno"> 70 </span>    androidTestImplementation <span class="string">"androidx.test.ext:junit:1.1.5"</span>
-<span class="caretline"><span class="lineno"> 71 </span>    androidTestImplementation <span class="warning"><span class="string">"androidx.test.espresso:espresso-core:3.5.1"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 72 </span>    androidTestImplementation <span class="string">"androidx.compose.ui:ui-test-junit4:1.5.3"</span>
-<span class="lineno"> 73 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-tooling:1.5.3"</span>
-<span class="lineno"> 74 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-test-manifest:1.5.3"</span>
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:77</span>: <span class="message">A newer version of androidx.compose.ui:ui-viewbinding than 1.5.3 is available: 1.9.4</span><br /><pre class="errorlines">
+<span class="lineno"> 74 </span>    implementation <span class="string">"org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3"</span>
+<span class="lineno"> 75 </span>
+<span class="lineno"> 76 </span>    <span class="comment">// WebView for video player integration</span>
+<span class="caretline"><span class="lineno"> 77 </span>    implementation <span class="warning"><span class="string">"androidx.compose.ui:ui-viewbinding:1.5.3"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 78 </span>    implementation <span class="string">"androidx.webkit:webkit:1.9.0"</span>
+<span class="lineno"> 79 </span>
+<span class="lineno"> 80 </span>    <span class="comment">// Annotation processing (kapt)</span></pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:78</span>: <span class="message">A newer version of androidx.webkit:webkit than 1.9.0 is available: 1.14.0</span><br /><pre class="errorlines">
+<span class="lineno"> 75 </span>
+<span class="lineno"> 76 </span>    <span class="comment">// WebView for video player integration</span>
+<span class="lineno"> 77 </span>    implementation <span class="string">"androidx.compose.ui:ui-viewbinding:1.5.3"</span>
+<span class="caretline"><span class="lineno"> 78 </span>    implementation <span class="warning"><span class="string">"androidx.webkit:webkit:1.9.0"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 79 </span>
+<span class="lineno"> 80 </span>    <span class="comment">// Annotation processing (kapt)</span>
+<span class="lineno"> 81 </span>
 </pre>
 
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:72</span>: <span class="message">A newer version of androidx.compose.ui:ui-test-junit4 than 1.5.3 is available: 1.9.4</span><br /><pre class="errorlines">
-<span class="lineno"> 69 </span>    testImplementation <span class="string">"junit:junit:4.13.2"</span>
-<span class="lineno"> 70 </span>    androidTestImplementation <span class="string">"androidx.test.ext:junit:1.1.5"</span>
-<span class="lineno"> 71 </span>    androidTestImplementation <span class="string">"androidx.test.espresso:espresso-core:3.5.1"</span>
-<span class="caretline"><span class="lineno"> 72 </span>    androidTestImplementation <span class="warning"><span class="string">"androidx.compose.ui:ui-test-junit4:1.5.3"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 73 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-tooling:1.5.3"</span>
-<span class="lineno"> 74 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-test-manifest:1.5.3"</span>
-<span class="lineno"> 75 </span>}
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:83</span>: <span class="message">A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.3.0</span><br /><pre class="errorlines">
+<span class="lineno"> 80 </span>    <span class="comment">// Annotation processing (kapt)</span>
+<span class="lineno"> 81 </span>
+<span class="lineno"> 82 </span>    testImplementation <span class="string">"junit:junit:4.13.2"</span>
+<span class="caretline"><span class="lineno"> 83 </span>    androidTestImplementation <span class="warning"><span class="string">"androidx.test.ext:junit:1.1.5"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 84 </span>    androidTestImplementation <span class="string">"androidx.test.espresso:espresso-core:3.5.1"</span>
+<span class="lineno"> 85 </span>    androidTestImplementation <span class="string">"androidx.compose.ui:ui-test-junit4:1.5.3"</span>
+<span class="lineno"> 86 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-tooling:1.5.3"</span>
 </pre>
 
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:73</span>: <span class="message">A newer version of androidx.compose.ui:ui-tooling than 1.5.3 is available: 1.9.4</span><br /><pre class="errorlines">
-<span class="lineno"> 70 </span>    androidTestImplementation <span class="string">"androidx.test.ext:junit:1.1.5"</span>
-<span class="lineno"> 71 </span>    androidTestImplementation <span class="string">"androidx.test.espresso:espresso-core:3.5.1"</span>
-<span class="lineno"> 72 </span>    androidTestImplementation <span class="string">"androidx.compose.ui:ui-test-junit4:1.5.3"</span>
-<span class="caretline"><span class="lineno"> 73 </span>    debugImplementation <span class="warning"><span class="string">"androidx.compose.ui:ui-tooling:1.5.3"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 74 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-test-manifest:1.5.3"</span>
-<span class="lineno"> 75 </span>}
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:84</span>: <span class="message">A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.7.0</span><br /><pre class="errorlines">
+<span class="lineno"> 81 </span>
+<span class="lineno"> 82 </span>    testImplementation <span class="string">"junit:junit:4.13.2"</span>
+<span class="lineno"> 83 </span>    androidTestImplementation <span class="string">"androidx.test.ext:junit:1.1.5"</span>
+<span class="caretline"><span class="lineno"> 84 </span>    androidTestImplementation <span class="warning"><span class="string">"androidx.test.espresso:espresso-core:3.5.1"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 85 </span>    androidTestImplementation <span class="string">"androidx.compose.ui:ui-test-junit4:1.5.3"</span>
+<span class="lineno"> 86 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-tooling:1.5.3"</span>
+<span class="lineno"> 87 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-test-manifest:1.5.3"</span>
 </pre>
 
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:74</span>: <span class="message">A newer version of androidx.compose.ui:ui-test-manifest than 1.5.3 is available: 1.9.4</span><br /><pre class="errorlines">
-<span class="lineno"> 71 </span>    androidTestImplementation <span class="string">"androidx.test.espresso:espresso-core:3.5.1"</span>
-<span class="lineno"> 72 </span>    androidTestImplementation <span class="string">"androidx.compose.ui:ui-test-junit4:1.5.3"</span>
-<span class="lineno"> 73 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-tooling:1.5.3"</span>
-<span class="caretline"><span class="lineno"> 74 </span>    debugImplementation <span class="warning"><span class="string">"androidx.compose.ui:ui-test-manifest:1.5.3"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 75 </span>}
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:85</span>: <span class="message">A newer version of androidx.compose.ui:ui-test-junit4 than 1.5.3 is available: 1.9.4</span><br /><pre class="errorlines">
+<span class="lineno"> 82 </span>    testImplementation <span class="string">"junit:junit:4.13.2"</span>
+<span class="lineno"> 83 </span>    androidTestImplementation <span class="string">"androidx.test.ext:junit:1.1.5"</span>
+<span class="lineno"> 84 </span>    androidTestImplementation <span class="string">"androidx.test.espresso:espresso-core:3.5.1"</span>
+<span class="caretline"><span class="lineno"> 85 </span>    androidTestImplementation <span class="warning"><span class="string">"androidx.compose.ui:ui-test-junit4:1.5.3"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 86 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-tooling:1.5.3"</span>
+<span class="lineno"> 87 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-test-manifest:1.5.3"</span>
+<span class="lineno"> 88 </span>}
+</pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:86</span>: <span class="message">A newer version of androidx.compose.ui:ui-tooling than 1.5.3 is available: 1.9.4</span><br /><pre class="errorlines">
+<span class="lineno"> 83 </span>    androidTestImplementation <span class="string">"androidx.test.ext:junit:1.1.5"</span>
+<span class="lineno"> 84 </span>    androidTestImplementation <span class="string">"androidx.test.espresso:espresso-core:3.5.1"</span>
+<span class="lineno"> 85 </span>    androidTestImplementation <span class="string">"androidx.compose.ui:ui-test-junit4:1.5.3"</span>
+<span class="caretline"><span class="lineno"> 86 </span>    debugImplementation <span class="warning"><span class="string">"androidx.compose.ui:ui-tooling:1.5.3"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 87 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-test-manifest:1.5.3"</span>
+<span class="lineno"> 88 </span>}
+</pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:87</span>: <span class="message">A newer version of androidx.compose.ui:ui-test-manifest than 1.5.3 is available: 1.9.4</span><br /><pre class="errorlines">
+<span class="lineno"> 84 </span>    androidTestImplementation <span class="string">"androidx.test.espresso:espresso-core:3.5.1"</span>
+<span class="lineno"> 85 </span>    androidTestImplementation <span class="string">"androidx.compose.ui:ui-test-junit4:1.5.3"</span>
+<span class="lineno"> 86 </span>    debugImplementation <span class="string">"androidx.compose.ui:ui-tooling:1.5.3"</span>
+<span class="caretline"><span class="lineno"> 87 </span>    debugImplementation <span class="warning"><span class="string">"androidx.compose.ui:ui-test-manifest:1.5.3"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 88 </span>}
 </pre>
 
 </div>
@@ -552,6 +606,53 @@ To suppress this error, use the issue id "GradleDependency" as explained in the 
               <div class="mdl-card__actions mdl-card--border">
 <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationGradleDependencyLink" onclick="reveal('explanationGradleDependency');">
 Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="GradleDependencyCardLink" onclick="hideid('GradleDependencyCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Performance"></a>
+<a name="KaptUsageInsteadOfKsp"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="KaptUsageInsteadOfKspCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Kapt usage should be replaced with KSP</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:61</span>: <span class="message">This library supports using KSP instead of kapt, which greatly improves performance. Learn more: <a href="https://developer.android.com/studio/build/migrate-to-ksp">https://developer.android.com/studio/build/migrate-to-ksp</a></span><br /><pre class="errorlines">
+<span class="lineno"> 58 </span>
+<span class="lineno"> 59 </span>    <span class="comment">// Room for local database</span>
+<span class="lineno"> 60 </span>    implementation <span class="string">"androidx.room:room-runtime:2.6.1"</span>
+<span class="caretline"><span class="lineno"> 61 </span>    <span class="warning">kapt <span class="string">"androidx.room:room-compiler:2.6.1"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 62 </span>    implementation <span class="string">"androidx.room:room-ktx:2.6.1"</span>
+<span class="lineno"> 63 </span>
+<span class="lineno"> 64 </span>    <span class="comment">// Retrofit2, OkHttp3, Gson Converter</span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationKaptUsageInsteadOfKsp" style="display: none;">
+KSP is a more efficient replacement for kapt. For libraries that support both, KSP should be used to improve build times.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/studio/build/migrate-to-ksp">https://developer.android.com/studio/build/migrate-to-ksp</a>
+</div>To suppress this error, use the issue id "KaptUsageInsteadOfKsp" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">KaptUsageInsteadOfKsp</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Performance</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 4/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationKaptUsageInsteadOfKspLink" onclick="reveal('explanationKaptUsageInsteadOfKsp');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="KaptUsageInsteadOfKspCardLink" onclick="hideid('KaptUsageInsteadOfKspCard');">
 Dismiss</button>            </div>
             </div>
           </section>
@@ -668,6 +769,32 @@ Feedback: <a href="https://issuetracker.google.com/issues/new?component=409828">
 </div>
 </div>
 <div class="issue">
+<div class="id">DetachAndAttachSameFragment<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+When doing a FragmentTransaction that includes both attach()                 and detach() operations being committed on the same fragment instance, it is a                 no-op. The reason for this is that the FragmentManager optimizes all operations                 within a single transaction so the attach() and detach() cancel each other out                 and neither is actually executed. To get the desired behavior, you should separate                 the attach() and detach() calls into separate FragmentTransactions.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.fragment<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=460964">https://issuetracker.google.com/issues/new?component=460964</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">DialogFragmentCallbacksDetector<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+When using a <code>DialogFragment</code>, the <code>setOnCancelListener</code> and                 <code>setOnDismissListener</code> callback functions within the <code>onCreateDialog</code> function                  __must not be used__ because the <code>DialogFragment</code> owns these callbacks.                  Instead the respective <code>onCancel</code> and <code>onDismiss</code> functions can be used to                  achieve the desired effect.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.fragment<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=460964">https://issuetracker.google.com/issues/new?component=460964</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
 <div class="id">EmptyNavDeepLink<div class="issueSeparator"></div>
 </div>
 <div class="metadata"><div class="explanation">
@@ -720,6 +847,73 @@ Feedback: <a href="https://issuetracker.google.com/issues/new?component=459778">
 </div>
 </div>
 <div class="issue">
+<div class="id">FieldSiteTargetOnQualifierAnnotation<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+It's redundant to use 'field:' site-targets for qualifier annotations.<br/><div class="vendor">
+Vendor: Google<br/>
+Identifier: com.google.dagger:dagger-lint<br/>
+Contact: <a href="https://github.com/google/dagger">https://github.com/google/dagger</a><br/>
+Feedback: <a href="https://github.com/google/dagger/issues">https://github.com/google/dagger/issues</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">FragmentAddMenuProvider<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+The Fragment lifecycle can result in a Fragment being active                 longer than its view. This can lead to unexpected behavior from lifecycle aware                 objects remaining active longer than the Fragment's view. To solve this issue,                 getViewLifecycleOwner() should be used as a LifecycleOwner rather than the                 Fragment instance once it is safe to access the view lifecycle in a                 Fragment's onCreateView, onViewCreated, onActivityCreated, or                 onViewStateRestored methods.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.fragment<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=460964">https://issuetracker.google.com/issues/new?component=460964</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">FragmentBackPressedCallback<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+The Fragment lifecycle can result in a Fragment being active                 longer than its view. This can lead to unexpected behavior from lifecycle aware                 objects remaining active longer than the Fragment's view. To solve this issue,                 getViewLifecycleOwner() should be used as a LifecycleOwner rather than the                 Fragment instance once it is safe to access the view lifecycle in a                 Fragment's onCreateView, onViewCreated, onActivityCreated, or                 onViewStateRestored methods.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.fragment<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=460964">https://issuetracker.google.com/issues/new?component=460964</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">FragmentLiveDataObserve<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+When observing a LiveData object from a fragment's onCreateView,                 onViewCreated, onActivityCreated, or onViewStateRestored method                 getViewLifecycleOwner() should be used as the LifecycleOwner rather than the                 Fragment instance. The Fragment lifecycle can result in the Fragment being                 active longer than its view. This can lead to unexpected behavior from                 LiveData objects being observed longer than the Fragment's view is active.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.fragment<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=460964">https://issuetracker.google.com/issues/new?component=460964</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">FragmentTagUsage<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+FragmentContainerView replaces the &lt;fragment> tag as the preferred                 way of adding fragments via XML. Unlike the &lt;fragment> tag, FragmentContainerView                 uses a normal <code>FragmentTransaction</code> under the hood to add the initial fragment,                 allowing further FragmentTransaction operations on the FragmentContainerView                 and providing a consistent timing for lifecycle events.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/reference/androidx/fragment/app/FragmentContainerView.html">https://developer.android.com/reference/androidx/fragment/app/FragmentContainerView.html</a>
+</div><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.fragment<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=460964">https://issuetracker.google.com/issues/new?component=460964</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
 <div class="id">FrequentlyChangedStateReadInComposition<div class="issueSeparator"></div>
 </div>
 <div class="metadata"><div class="explanation">
@@ -754,6 +948,20 @@ In order to use the ActivityResult APIs you must upgrade your                 Fr
 Vendor: Android Open Source Project<br/>
 Identifier: androidx.activity<br/>
 Feedback: <a href="https://issuetracker.google.com/issues/new?component=527362">https://issuetracker.google.com/issues/new?component=527362</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">JvmStaticProvidesInObjectDetector<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+It's redundant to annotate @Provides functions in object classes with @JvmStatic.<br/><div class="vendor">
+Vendor: Google<br/>
+Identifier: com.google.dagger:dagger-lint<br/>
+Contact: <a href="https://github.com/google/dagger">https://github.com/google/dagger</a><br/>
+Feedback: <a href="https://github.com/google/dagger/issues">https://github.com/google/dagger/issues</a><br/>
 </div>
 <br/>
 <br/></div>
@@ -849,6 +1057,37 @@ The first (or only) Modifier parameter in a Composable function should follow th
 Vendor: Jetpack Compose<br/>
 Identifier: androidx.compose.ui<br/>
 Feedback: <a href="https://issuetracker.google.com/issues/new?component=612128">https://issuetracker.google.com/issues/new?component=612128</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">ModuleCompanionObjects<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+Companion objects in @Module-annotated classes are considered part of the API.<br/><div class="vendor">
+Vendor: Google<br/>
+Identifier: com.google.dagger:dagger-lint<br/>
+Contact: <a href="https://github.com/google/dagger">https://github.com/google/dagger</a><br/>
+Feedback: <a href="https://github.com/google/dagger/issues">https://github.com/google/dagger/issues</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">ModuleCompanionObjectsNotInModuleParent<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+Companion objects in @Module-annotated classes are considered part of the API. This<br/>
+companion object is not a companion to an @Module-annotated class though, and should be<br/>
+moved to a top-level object declaration instead otherwise Dagger will ignore companion<br/>
+object.<br/><div class="vendor">
+Vendor: Google<br/>
+Identifier: com.google.dagger:dagger-lint<br/>
+Contact: <a href="https://github.com/google/dagger">https://github.com/google/dagger</a><br/>
+Feedback: <a href="https://github.com/google/dagger/issues">https://github.com/google/dagger/issues</a><br/>
 </div>
 <br/>
 <br/></div>
@@ -1088,6 +1327,19 @@ Feedback: <a href="https://issuetracker.google.com/issues/new?component=459778">
 </div>
 </div>
 <div class="issue">
+<div class="id">UnsafeRepeatOnLifecycleDetector<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+The repeatOnLifecycle APIs should be used with the viewLifecycleOwner                 in Fragments as opposed to lifecycleOwner.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.fragment<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=460964">https://issuetracker.google.com/issues/new?component=460964</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
 <div class="id">UnusedBoxWithConstraintsScope<div class="issueSeparator"></div>
 </div>
 <div class="metadata"><div class="explanation">
@@ -1166,6 +1418,19 @@ Feedback: <a href="https://issuetracker.google.com/issues/new?component=612128">
 </div>
 </div>
 <div class="issue">
+<div class="id">UseGetLayoutInflater<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+Using LayoutInflater.from(Context) can return a LayoutInflater                  that does not have the correct theme.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.fragment<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=460964">https://issuetracker.google.com/issues/new?component=460964</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
 <div class="id">UseOfNonLambdaOffsetOverload<div class="issueSeparator"></div>
 </div>
 <div class="metadata"><div class="explanation">
@@ -1173,6 +1438,19 @@ Feedback: <a href="https://issuetracker.google.com/issues/new?component=612128">
 Vendor: Jetpack Compose<br/>
 Identifier: androidx.compose.foundation<br/>
 Feedback: <a href="https://issuetracker.google.com/issues/new?component=612128">https://issuetracker.google.com/issues/new?component=612128</a><br/>
+</div>
+<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UseRequireInsteadOfGet<div class="issueSeparator"></div>
+</div>
+<div class="metadata"><div class="explanation">
+AndroidX added new "require____()" versions of common "get___()" APIs, such as getContext/getActivity/getArguments/etc. Rather than wrap these in something like requireNotNull(), using these APIs will allow the underlying component to try to tell you _why_ it was null, and thus yield a better error message.<br/><div class="vendor">
+Vendor: Android Open Source Project<br/>
+Identifier: androidx.fragment<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=460964">https://issuetracker.google.com/issues/new?component=460964</a><br/>
 </div>
 <br/>
 <br/></div>

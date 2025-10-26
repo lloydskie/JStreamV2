@@ -1,7 +1,7 @@
 <variant
     name="debug"
     package="com.jstreamv2"
-    minSdkVersion="24"
+    minSdkVersion="26"
     targetSdkVersion="34"
     debuggable="true"
     mergedManifest="build\intermediates\merged_manifest\debug\AndroidManifest.xml"
@@ -38,12 +38,12 @@
       applicationId="com.jstreamv2"
       generatedSourceFolders="build\generated\source\kapt\debug;build\generated\ap_generated_sources\debug\out"
       generatedResourceFolders="build\generated\res\resValues\debug"
-      desugaredMethodsFiles="C:\Users\qmodz\.gradle\caches\transforms-3\37fe1126baec20d63ef795d8de7e4abe\transformed\D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="C:\Users\qmodz\.gradle\caches\transforms-3\1d2a7a0094ed26d9ff31b7518fe8ee3d\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
   <androidTestArtifact
       applicationId="com.jstreamv2.test"
       generatedResourceFolders="build\generated\res\resValues\androidTest\debug"
-      desugaredMethodsFiles="C:\Users\qmodz\.gradle\caches\transforms-3\37fe1126baec20d63ef795d8de7e4abe\transformed\D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="C:\Users\qmodz\.gradle\caches\transforms-3\1d2a7a0094ed26d9ff31b7518fe8ee3d\transformed\D8BackportedDesugaredMethods.txt">
   </androidTestArtifact>
   <testArtifact>
   </testArtifact>

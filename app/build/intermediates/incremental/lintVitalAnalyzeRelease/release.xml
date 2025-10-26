@@ -1,12 +1,12 @@
 <variant
     name="release"
     package="com.jstreamv2"
-    minSdkVersion="24"
+    minSdkVersion="26"
     targetSdkVersion="34"
     mergedManifest="build\intermediates\merged_manifest\release\AndroidManifest.xml"
     proguardFiles="build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.2.0;proguard-rules.pro"
     partialResultsDir="build\intermediates\lint_vital_partial_results\release\out"
-    desugaredMethodsFiles="C:\Users\qmodz\.gradle\caches\transforms-3\37fe1126baec20d63ef795d8de7e4abe\transformed\D8BackportedDesugaredMethods.txt">
+    desugaredMethodsFiles="C:\Users\qmodz\.gradle\caches\transforms-3\1d2a7a0094ed26d9ff31b7518fe8ee3d\transformed\D8BackportedDesugaredMethods.txt">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -26,6 +26,6 @@
       applicationId="com.jstreamv2"
       generatedSourceFolders="build\generated\source\kapt\release;build\generated\ap_generated_sources\release\out"
       generatedResourceFolders="build\generated\res\resValues\release"
-      desugaredMethodsFiles="C:\Users\qmodz\.gradle\caches\transforms-3\37fe1126baec20d63ef795d8de7e4abe\transformed\D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="C:\Users\qmodz\.gradle\caches\transforms-3\1d2a7a0094ed26d9ff31b7518fe8ee3d\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>
