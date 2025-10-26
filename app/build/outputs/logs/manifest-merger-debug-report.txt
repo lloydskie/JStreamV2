@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:1:1-16:12
-INJECTED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:1:1-16:12
-INJECTED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:1:1-16:12
-INJECTED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:1:1-16:12
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:1:1-44:12
 MERGED from [io.coil-kt:coil-compose:2.4.0] C:\Users\qmodz\.gradle\caches\transforms-3\50e02576a25846f7c7e9035bd809f1d3\transformed\jetified-coil-compose-2.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.4] C:\Users\qmodz\.gradle\caches\transforms-3\7b1b6ae079eda1ac05bbe281522899a8\transformed\navigation-common-2.7.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.4] C:\Users\qmodz\.gradle\caches\transforms-3\9ffc7e9c26b4139695e9b0d7f3494e58\transformed\navigation-runtime-2.7.4\AndroidManifest.xml:17:1-22:12
@@ -90,8 +90,8 @@ MERGED from [com.google.dagger:dagger-lint-aar:2.48] C:\Users\qmodz\.gradle\cach
 	xmlns:android
 		ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:2:5-15:19
-INJECTED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:2:5-15:19
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:2:5-43:19
+INJECTED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:2:5-43:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\qmodz\.gradle\caches\transforms-3\fb918f40d9d0726e1849c7feb4679867\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] C:\Users\qmodz\.gradle\caches\transforms-3\fb918f40d9d0726e1849c7feb4679867\transformed\jetified-ui-test-manifest-1.6.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] C:\Users\qmodz\.gradle\caches\transforms-3\be2cf000149f4e0548a6dec136df0795\transformed\jetified-ui-tooling-release\AndroidManifest.xml:22:5-26:19
@@ -123,7 +123,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\qmodz\.gradle\cach
 	android:theme
 		ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:6:9-47
 activity#com.jstreamv2.MainActivity
-ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:7:9-14:20
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:7:9-42:20
 	android:exported
 		ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:9:13-36
 	android:name
@@ -138,6 +138,34 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:12:17-77
 	android:name
 		ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:12:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:movie+data:pathPattern:/.*+data:scheme:jstream
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:15:13-20:29
+action#android.intent.action.VIEW
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.DEFAULT
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:17:17-76
+	android:name
+		ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:17:27-73
+category#android.intent.category.BROWSABLE
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:18:17-78
+	android:name
+		ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:18:27-75
+data
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:19:17-97
+	android:host
+		ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:19:48-68
+	android:scheme
+		ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:19:23-47
+	android:pathPattern
+		ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:19:69-94
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:tv+data:pathPattern:/.*+data:scheme:jstream
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:22:13-27:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:person+data:pathPattern:/.*+data:scheme:jstream
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:29:13-34:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:genre+data:pathPattern:/.*+data:scheme:jstream
+ADDED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml:36:13-41:29
 uses-sdk
 INJECTED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\htdocs\JStreamV2\app\src\main\AndroidManifest.xml

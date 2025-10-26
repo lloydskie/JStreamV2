@@ -1,3 +1,21 @@
 R_DEF: Internal format may change without notice
 local
+drawable ic_action_add
+drawable ic_action_favorite
+drawable ic_action_play
+drawable ic_action_share
+drawable ic_app_logo
+drawable ic_bottom_home
+drawable ic_bottom_list
+drawable ic_bottom_profile
+drawable ic_bottom_search
+drawable ic_empty_state
+drawable ic_error_image
+drawable ic_genre_icon
+drawable ic_jstream_logo
+drawable ic_placeholder_poster
+drawable splash_background
+drawable splash_logo
+mipmap ic_launcher
+mipmap ic_launcher_round
 style Theme.JStreamV2

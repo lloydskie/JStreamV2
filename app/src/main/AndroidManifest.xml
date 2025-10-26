@@ -11,6 +11,34 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!-- Deep Link: Movie Detail -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="jstream" android:host="movie" android:pathPattern="/.*" />
+            </intent-filter>
+            <!-- Deep Link: TV Show Detail -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="jstream" android:host="tv" android:pathPattern="/.*" />
+            </intent-filter>
+            <!-- Deep Link: Person Detail -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="jstream" android:host="person" android:pathPattern="/.*" />
+            </intent-filter>
+            <!-- Deep Link: Genre Browse -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="jstream" android:host="genre" android:pathPattern="/.*" />
+            </intent-filter>
         </activity>
     </application>
 </manifest>

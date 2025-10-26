@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.jstreamv2.app-merged_res-63:/drawable_ic_jstream_logo.xml.flat",
+        "source": "com.jstreamv2.app-main-65:/drawable/ic_jstream_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_action_share.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_action_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_splash_logo.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\splash_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_empty_state.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_empty_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_splash_background.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\splash_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_action_add.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_action_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_bottom_list.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_bottom_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_genre_icon.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_genre_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_bottom_profile.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_bottom_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_action_play.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_action_play.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_app_logo.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_app_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_placeholder_poster.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_placeholder_poster.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_bottom_home.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_bottom_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_action_favorite.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_action_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_error_image.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_error_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\drawable_ic_bottom_search.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\drawable\\ic_bottom_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\mipmap-anydpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-merged_res-63:\\mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\qmodz\\.gradle\\daemon\\8.5\\com.jstreamv2.app-main-65:\\mipmap-anydpi\\ic_launcher_round.xml"
+    }
+]

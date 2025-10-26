@@ -1,0 +1,37 @@
+package data.local;
+
+@kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\b\u0002\bg\u0018\u00002\u00020\u0001J\u0019\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u00a7@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0006J\u0011\u0010\u0007\u001a\u00020\u0003H\u00a7@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\bJ\u0019\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bH\u00a7@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\fJ\u0013\u0010\r\u001a\u0004\u0018\u00010\u000bH\u00a7@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\bJ#\u0010\u000e\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u00a7@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0013J\u001c\u0010\u0014\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00050\u00160\u00152\u0006\u0010\u0017\u001a\u00020\u000bH\'\u0082\u0002\u0004\n\u0002\b\u0019\u00a8\u0006\u0018"}, d2 = {"Ldata/local/CachedContentDao;", "", "cacheContent", "", "content", "Ldata/local/CachedContent;", "(Ldata/local/CachedContent;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "clearAllCache", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "clearOldCache", "maxTime", "", "(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getCacheSize", "getCachedContent", "id", "", "type", "", "(ILjava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getRecentCachedContent", "Lkotlinx/coroutines/flow/Flow;", "", "minTime", "app_release"})
+@androidx.room.Dao
+public abstract interface CachedContentDao {
+    
+    @androidx.room.Query(value = "SELECT * FROM cached_content WHERE id = :id AND type = :type")
+    @org.jetbrains.annotations.Nullable
+    public abstract java.lang.Object getCachedContent(int id, @org.jetbrains.annotations.NotNull
+    java.lang.String type, @org.jetbrains.annotations.NotNull
+    kotlin.coroutines.Continuation<? super data.local.CachedContent> $completion);
+    
+    @androidx.room.Query(value = "SELECT * FROM cached_content WHERE cachedAt > :minTime")
+    @org.jetbrains.annotations.NotNull
+    public abstract kotlinx.coroutines.flow.Flow<java.util.List<data.local.CachedContent>> getRecentCachedContent(long minTime);
+    
+    @androidx.room.Insert(onConflict = 1)
+    @org.jetbrains.annotations.Nullable
+    public abstract java.lang.Object cacheContent(@org.jetbrains.annotations.NotNull
+    data.local.CachedContent content, @org.jetbrains.annotations.NotNull
+    kotlin.coroutines.Continuation<? super kotlin.Unit> $completion);
+    
+    @androidx.room.Query(value = "DELETE FROM cached_content WHERE cachedAt < :maxTime")
+    @org.jetbrains.annotations.Nullable
+    public abstract java.lang.Object clearOldCache(long maxTime, @org.jetbrains.annotations.NotNull
+    kotlin.coroutines.Continuation<? super kotlin.Unit> $completion);
+    
+    @androidx.room.Query(value = "DELETE FROM cached_content")
+    @org.jetbrains.annotations.Nullable
+    public abstract java.lang.Object clearAllCache(@org.jetbrains.annotations.NotNull
+    kotlin.coroutines.Continuation<? super kotlin.Unit> $completion);
+    
+    @androidx.room.Query(value = "SELECT SUM(LENGTH(detailsJson)) FROM cached_content")
+    @org.jetbrains.annotations.Nullable
+    public abstract java.lang.Object getCacheSize(@org.jetbrains.annotations.NotNull
+    kotlin.coroutines.Continuation<? super java.lang.Long> $completion);
+}
